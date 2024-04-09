@@ -9,6 +9,9 @@
 
 body{
     font-family: "Poppins", sans-serif;
+    background-image: url(assets/body-img.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
 }
 
 html{
@@ -24,11 +27,11 @@ a, .btn{
 
 /* DESKTOP-NAV */
 /* my version */
-/* #desktop-nav{
-    background-color: rgb(97, 97, 97);
+#desktop-nav{
+    background-color: rgb(167, 167, 167);
     color: black;
-    text-shadow: ;
-} */
+    text-shadow: 3px 3px 5px white;
+}
 /* my version */
 nav, .nav-links{
     display:flex;
@@ -50,14 +53,16 @@ a{
     text-decoration-color: white;
 }
 a:hover{
-    color:grey;
+    color:rgb(145, 61, 61);
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(181,181,181);
+    text-decoration-color: rgb(145, 61, 61);
 
 }
 .logo{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:maroon;
 }
 .logo:hover{
     cursor:default;
@@ -156,9 +161,13 @@ section{
     justify-content: center;
     gap: 5rem;
     height:80vh;
-    background-image: url(assets/background-img.jpg);
+    background-image: url(assets/background-profile.jpg);
     background-size: cover; 
     background-position: center;
+    border:0px;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -167,12 +176,22 @@ section{
     height:400px;
     width:400px;
     margin: auto 0;
-    border:0px solid grey;
+    /* border:0px solid grey; */
     /* border-radius: 50%; */
     /* background-image: url(assets/profile-pic.jpeg); */
     /* background-position: bottom;
     background-size: cover; */
+
 }
+/* my version */
+.section__pic-container img{
+    border:0px;
+    border-radius: 50%;
+    margin-left: 1rem;
+    object-fit: cover;
+}
+/* my version */
+
 
 .section__text{
     align-self: center;
@@ -184,6 +203,8 @@ section{
 
 .section__text__p1{
     text-align: center;
+    color:rgb(145, 61, 61);
+
 }
 .section__text__p2{
     font-size: 1.5rem;
@@ -192,6 +213,7 @@ section{
 .title{
     font-size: 3rem;
     text-align: center;
+    color:rgb(198, 45, 45);
 }
 #socials-container{
     display: flex;
@@ -246,6 +268,11 @@ section{
 /* ABOUT ME SECTION */
 #about{
     position: relative;
+    background-image: url(assets/aboutme-bg.jpg);
+    background-size: cover; 
+    background-position: center;
+    border:0px;
+    border-radius: 2rem;
 
 }
 
@@ -256,12 +283,15 @@ section{
 }
 
 .about-details-container{
-    justify-content: center;
+    justify-content:center;
     flex-direction: column;
 }
 
 .about-containers, .about-details-container{
     display: flex;
+}
+.about-details-container{
+    margin-right: 1rem;
 }
 
 .about-pic{
@@ -272,6 +302,7 @@ section{
     position:absolute;
     right:-5rem;
     bottom:2.5rem;
+    border-radius: 0 0 1rem 1rem;
 
 }
 
@@ -288,6 +319,7 @@ section{
 .section-container{
     gap:4rem;
     height:80%;
+    justify-content: center;
 }
 .section__pic-container{
     height:400px;
